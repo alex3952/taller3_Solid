@@ -1,4 +1,4 @@
-public class LogIn {
+public class LogIn implements Authentication{
     public void log (User user) {
         System.out.println("Has access to the website");
         insertUserInDatabase(user);

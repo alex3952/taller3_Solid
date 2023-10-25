@@ -1,15 +1,16 @@
 public class AppWeb {
-    LogIn logIn;
-    LogInAdmin logInAdmin;
-    MySQL mySQL;
-    public AppWeb (LogIn logIn, MySQL mySQL) {
-        // Logic
+    private Authentication authentication;
+    private DatabaseConnection databaseConnection;
+
+    public AppWeb(Authentication authentication, DatabaseConnection databaseConnection) {
+        this.authentication = authentication;
+        this.databaseConnection = databaseConnection;
+        // Lógica
     }
-    public AppWeb (LogInAdmin logInAdmin, MySQL mySQL) {
-        // Logic
-    }
-    public void connectToDatabase (MySQL mySQL) {
-        // Logic
+
+    public void connectToDatabase() {
+        // Utilice this.databaseConnection para conectarse a la base de datos
+        // Lógica
     }
 }
 
